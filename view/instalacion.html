@@ -8,7 +8,166 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Guia de instalación y configuración básica de Odoo</title>
 </head>
-<body>
-    Paso 1. 
+<body class="container mt-4">
+    <h1 class="mb-4">Guia de instalación y configuración básica de Odoo</h1>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand">ERP - ODOO</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Introducción Odoo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instalacion.html">Instalación de Odoo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="modulos.html">Módulos para Oodo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="backup.html">Backup de Oodo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="alert alert-info">
+        <strong>Nota:</strong> Esta guía cubre la instalación de Odoo 16 en Windows 10 usando el instalador oficial.
+    </div>
+    <h2 class="mt-4">Instalación paso a paso</h2>
+    
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">
+            <h3>1. Descargar el instalador de Odoo</h3>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>Visitar el sitio oficial de Odoo: <a href="https://www.odoo.com/es_ES/page/download" target="_blank">https://www.odoo.com</a></li>
+                <li>Rellenar el formulario con los diferentes datos personales</li>
+            <center><img src="../img/cap_inst/paso 0.PNG" alt="Formlario de descarga de Odoo" class="img-fluid rounded"></center>
+                <li>Descargar la versión Oodo 16 Community para Windows y nos saldrá luego un mensaje tambien. </li>
+            <center><img src="../img/cap_inst/paso0.1.extra.PNG" alt="Tipo de descarga de Odoo" class="img-fluid rounded"></center>
+            <center><img src="../img/cap_inst/paso1.png" alt="Mensaje de instalación Odoo" class="img-fluid rounded"></center>
+            <li>Luego de ello hemos de ejecutar el archivo .exe descargado</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">
+            <h3>2. Ejecutar el asistente de instalación</h3>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>Aceptar el acuerdo de licencia</li>
+                <li>Seleccionar los componentes a instalar:
+                    <ul>
+                        <li>Odoo Server</li>
+                        <li>PostgreSQL Database</li>
+                    </ul>
+                </li>
+                <li>Especificar el directorio de instalación (C:\Odoo por defecto)</li>
+                <li>Configurar credenciales de PostgreSQL:
+                    <ul>
+                        <li>Usuario: postgres</li>
+                        <li>Contraseña: (crear una segura)</li>
+                    </ul>
+                </li>
+            </ol>
+            <img src="../img/odoo-install-wizard.png" alt="Asistente de instalación" class="img-fluid rounded">
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">
+            <h3>3. Configurar el servicio de Windows</h3>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>Durante la instalación, seleccionar "Install as service"</li>
+                <li>El servicio se iniciará automáticamente al finalizar la instalación</li>
+                <li>Para verificar, abrir el Administrador de tareas → Pestaña Servicios</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">
+            <h3>4. Acceder a Odoo</h3>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>Abrir un navegador web</li>
+                <li>Ingresar a: <a href="http://localhost:8069">http://localhost:8069</a></li>
+                <li>Crear una nueva base de datos:
+                    <ul>
+                        <li>Nombre de la base de datos</li>
+                        <li>Email</li>
+                        <li>Contraseña</li>
+                        <li>Seleccionar idioma</li>
+                    </ul>
+                </li>
+            </ol>
+            <img src="../img/odoo-first-login.png" alt="Primer acceso a Odoo" class="img-fluid rounded">
+        </div>
+    </div>
+
+    <h2 class="mt-4">Configuración inicial</h2>
+    
+    <div class="card mb-4">
+        <div class="card-header bg-success text-white">
+            <h3>Configuración de la empresa</h3>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>Ir a Configuración → Empresas</li>
+                <li>Completar la información de la empresa:
+                    <ul>
+                        <li>Nombre</li>
+                        <li>Dirección</li>
+                        <li>Logo</li>
+                        <li>Información fiscal</li>
+                    </ul>
+                </li>
+                <li>Guardar los cambios</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header bg-success text-white">
+            <h3>Instalar módulos básicos</h3>
+        </div>
+        <div class="card-body">
+            <ol>
+                <li>Ir a Aplicaciones</li>
+                <li>Buscar e instalar módulos esenciales:
+                    <ul>
+                        <li>Ventas</li>
+                        <li>Compras</li>
+                        <li>Inventario</li>
+                        <li>Contabilidad</li>
+                    </ul>
+                </li>
+                <li>Hacer clic en "Instalar" para cada módulo</li>
+            </ol>
+            <img src="../img/odoo-modules.png" alt="Instalación de módulos" class="img-fluid rounded">
+        </div>
+    </div>
+
+    <div class="alert alert-success mt-4">
+        <strong>¡Instalación completada!</strong> Ahora puede comenzar a utilizar Odoo en su entorno Windows 10.
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
