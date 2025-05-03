@@ -1,0 +1,55 @@
+.navbar-completa {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.fondo-gradiente {
+    background: linear-gradient(90deg, #007bff 0%, #6610f2 100%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.marca-navbar {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.enlace-nav {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.enlace-nav:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+    .navbar-completa {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .menu-colapsable {
+        padding: 1rem;
+        background: linear-gradient(90deg, #0062cc 0%, #560bd1 100%);
+    }
+}
+
+.contenedor-principal {
+    margin-top: 0;
+    padding: 0;
+}
+
+.boton-movil {
+    border-color: rgba(255, 255, 255, 0.5);
+}
