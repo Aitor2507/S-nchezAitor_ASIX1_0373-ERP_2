@@ -9,37 +9,36 @@
     <title>Guia de instalación y configuración básica de Odoo</title>
 </head>
 <body class="container mt-4">
-    <h1 class="mb-4">Guia de instalación y configuración básica de Odoo</h1>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <nav class="navbar navbar-expand-lg navbar-odoo">
         <div class="container-fluid">
-            <a class="navbar-brand">ERP - ODOO</a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/ico/odoo.png" alt="Odoo Logo" height="30" class="d-inline-block align-top me-2">
+                ERP - ODOO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOdoo" aria-controls="navbarOdoo" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav justify-content-end">
+            <div class="collapse navbar-collapse" id="navbarOdoo">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Introducción Odoo</a>
+                        <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="instalacion.html">Instalación de Odoo</a>
+                        <a class="nav-link" href="instalacion.html">Instalación</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="modulos.html">Módulos para Oodo</a>
+                        <a class="nav-link" href="modulos.html">Módulos</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="backup.html">Backup de Oodo</a>
+                        <a class="nav-link" href="backup.html">Backup</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    <br>
+    <h1 class="mb-4">Guia de instalación y configuración básica de Odoo</h1>    
     <div class="alert alert-info">
         <strong>Nota:</strong> Esta guía cubre la instalación de Odoo 16 en Windows 10 usando el instalador oficial.
     </div>
@@ -64,38 +63,42 @@
 
     <div class="card mb-4">
         <div class="card-header bg-primary text-white">
-            <h3>2. Ejecutar el asistente de instalación</h3>
+            <h3>2. Asistente de instalador Odoo</h3>
+
         </div>
         <div class="card-body">
             <ol>
-                <li>Aceptar el acuerdo de licencia</li>
-                <li>Seleccionar los componentes a instalar:
+                <li>Seleccionar el idioma, en nuestro caso es en inglés</li>
+            <center><img src="../img/cap_inst/paso2.png" alt="Asistente Odoo" class="img-fluid rounded" width="auto"></center>
+                <li>Darle click a siguiente para seguir con la guía de instalacion</li>
+                <center><img src="../img/cap_inst/paso3.png" alt="Siguiente paso Odoo" class="img-fluid rounded" width="auto"></center>
+                <li>Aceptar los términos de licencia</li>
+                <center><img src="../img/cap_inst/paso4.png" alt="Siguiente paso Odoo" class="img-fluid rounded" width="auto"></center>
+                <li>Seleccionar los componentes a instalar y siguiente:
                     <ul>
                         <li>Odoo Server</li>
                         <li>PostgreSQL Database</li>
                     </ul>
                 </li>
-                <li>Especificar el directorio de instalación (C:\Odoo por defecto)</li>
+                <center><img src="../img/cap_inst/paso5.png" alt="Siguiente paso Odoo" class="img-fluid rounded" width="auto"></center>
                 <li>Configurar credenciales de PostgreSQL:
                     <ul>
-                        <li>Usuario: postgres</li>
-                        <li>Contraseña: (crear una segura)</li>
+                        <li>Hostname:localhost</li>
+                        <li>Puerto:5432</li>
+                        <li>Usuario: openpg</li>
+                        <li>Contraseña:  openpgpwd (crear una más segura)</li>
                     </ul>
                 </li>
-            </ol>
-            <img src="../img/odoo-install-wizard.png" alt="Asistente de instalación" class="img-fluid rounded">
-        </div>
-    </div>
-
-    <div class="card mb-4">
-        <div class="card-header bg-primary text-white">
-            <h3>3. Configurar el servicio de Windows</h3>
-        </div>
-        <div class="card-body">
-            <ol>
-                <li>Durante la instalación, seleccionar "Install as service"</li>
-                <li>El servicio se iniciará automáticamente al finalizar la instalación</li>
-                <li>Para verificar, abrir el Administrador de tareas → Pestaña Servicios</li>
+                <center><img src="../img/cap_inst/paso6.png" alt="Siguiente paso Odoo" class="img-fluid rounded" width="auto"></center>
+                <li>Especificar el directorio de instalación (C:\...), normalmente está por defecto y le damos siguiente</li>
+                <center><img src="../img/cap_inst/paso7.png" alt="Siguiente paso Odoo" class="img-fluid rounded" width="auto"></center>
+                <li>Esperamos que se decargue el Odoo, Service,PostgreSQL,etc.</li>
+                <center><img src="../img/cap_inst/paso8.png" alt="Siguiente paso Odoo" class="img-fluid rounded" width="auto"></center>
+                <center><img src="../img/cap_inst/paso9.png" alt="Siguiente paso Odoo" class="img-fluid rounded" width="auto"></center>
+                <li>Por último le damos a siguiente y finalizar.</li>
+                <center><img src="../img/cap_inst/paso10.png" alt="Siguiente paso Odoo" class="img-fluid rounded" width="auto"></center>
+                <center><img src="../img/cap_inst/paso11.png" alt="Siguiente paso Odoo" class="img-fluid rounded" width="auto"></center>
+                <li>Directamente iremos a Odoo de la web por el check que nos lo ejecuta directamente</li>
             </ol>
         </div>
     </div>
@@ -106,63 +109,35 @@
         </div>
         <div class="card-body">
             <ol>
-                <li>Abrir un navegador web</li>
+                <li>En caso de que no se nos abra hemos de abrir un navegador web</li>
                 <li>Ingresar a: <a href="http://localhost:8069">http://localhost:8069</a></li>
                 <li>Crear una nueva base de datos:
                     <ul>
                         <li>Nombre de la base de datos</li>
                         <li>Email</li>
                         <li>Contraseña</li>
-                        <li>Seleccionar idioma</li>
+                        <li>Número de teléfono</li>
+                        <li>Seleccionar idioma y país</li>
+                        <li>Seleccionar demo data</li>
                     </ul>
                 </li>
+                <div class="alert alert-danger">
+                    <strong>Nota:</strong> Es importante apuntarse el Master password!!!
+                </div>
+                <center><img src="../img/cap_inst/paso12.png" alt="Siguiente paso Odoo" class="img-fluid rounded" width="auto"></center>
+                <li>Ahora nos logeamos en la web de Odoo y entramos a las aplicaciones y usuarios </li>
+                <center><img src="../img/cap_inst/paso13.png" alt="Siguiente paso Odoo" class="img-fluid rounded" width="auto"></center>
+                <center><img src="../img/cap_inst/paso14.png" alt="Siguiente paso Odoo" class="img-fluid rounded" width="auto"></center>
+                <center><img src="../img/cap_inst/paso15.png" alt="Siguiente paso Odoo" class="img-fluid rounded" width="auto"></center>
+
+
             </ol>
-            <img src="../img/odoo-first-login.png" alt="Primer acceso a Odoo" class="img-fluid rounded">
+
+
         </div>
     </div>
 
-    <h2 class="mt-4">Configuración inicial</h2>
     
-    <div class="card mb-4">
-        <div class="card-header bg-success text-white">
-            <h3>Configuración de la empresa</h3>
-        </div>
-        <div class="card-body">
-            <ol>
-                <li>Ir a Configuración → Empresas</li>
-                <li>Completar la información de la empresa:
-                    <ul>
-                        <li>Nombre</li>
-                        <li>Dirección</li>
-                        <li>Logo</li>
-                        <li>Información fiscal</li>
-                    </ul>
-                </li>
-                <li>Guardar los cambios</li>
-            </ol>
-        </div>
-    </div>
-
-    <div class="card mb-4">
-        <div class="card-header bg-success text-white">
-            <h3>Instalar módulos básicos</h3>
-        </div>
-        <div class="card-body">
-            <ol>
-                <li>Ir a Aplicaciones</li>
-                <li>Buscar e instalar módulos esenciales:
-                    <ul>
-                        <li>Ventas</li>
-                        <li>Compras</li>
-                        <li>Inventario</li>
-                        <li>Contabilidad</li>
-                    </ul>
-                </li>
-                <li>Hacer clic en "Instalar" para cada módulo</li>
-            </ol>
-            <img src="../img/odoo-modules.png" alt="Instalación de módulos" class="img-fluid rounded">
-        </div>
-    </div>
 
     <div class="alert alert-success mt-4">
         <strong>¡Instalación completada!</strong> Ahora puede comenzar a utilizar Odoo en su entorno Windows 10.
