@@ -8,8 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Módulos - Manual de instalación y justificación</title>
 </head>
-<body>
-   
+
+<body>   
     <nav class="navbar navbar-expand-lg navbar-odoo">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
@@ -37,6 +37,104 @@
             </div>
         </div>
     </nav>
+    
+    <h1 class="mb-4">Guia de instalación de módulos para Odoo</h1>  
+    <div class="container">
+        <h2 class="mt-4">Instalación paso a paso</h2>
+    
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h3>1. Acceder a Odoo</h3>
+            </div>
+            <div class="card-body">
+                <ol>
+                    <li>Entrar a un navegador e ingresar a: <a href="http://localhost:8069">http://localhost:8069</a></li>
+                    <li>Introducir los datos ya creados anteriormente para iniciar sesión.</li>
+                    <center><img src="../img/cap_mod/mod_ventas/mod_0.PNG" alt="Inicio de Odoo" class="img-fluid rounded" width="auto"></center>
+                    <li>Nos vamos al icono superior a la izquierda donde hay un cubo con puntos, nos vamos al apartado de aplicaciones y aquí tendremos de diferentes categorías. Para el ejemplo escogeremos la categoría "Venta" y, dentro de esta, las aplicaciones "Punto de venta" y "CRM".</li>
+                    <center><img src="../img/cap_mod/mod_ventas/mod_1.PNG" alt="Aplicaciones Odoo" class="img-fluid rounded" width="auto"></center>
+                    <li>Una vez activado debemos esperar un momento para tener todas las funcionalidades.</li>
+                    <center><img src="../img/cap_mod/mod_ventas/mod_2.PNG" alt="Página de carga Odoo" class="img-fluid rounded" width="auto"></center>
+                    <li>Finalmente, habíamos visto que solo teníamos ajustes y aplicaciones, pero ahora tenemos muchas más funcionalidades proporcionadas por los modulos añadidos, en este caso vemos el de "Punto de venta" con todas sus funcionalidades y el de "CRM" de igual manera.</li>
+                    <center><img src="../img/cap_mod/mod_ventas/mod_3.PNG" alt=" Funcionalidades Odoo" class="img-fluid rounded" width="auto"></center>
+                </ol>
+            </div>
+        </div>
 
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h3>2. Acceder a módulos instalados</h3>
+            </div>
+            <div class="card-body">
+                <ol>
+                <li>Una vez instalados los módulos, veremos que hay diferentes funciones. Como ejemplo, dentro de la aplicación CRM, nos vamos a la parte superior izquierda y seleccionamos Conversaciones.</li>
+                <center><img src="../img/cap_mod/mod_crm/paso1crm.png" alt=" Apps Odoo " class="img-fluid rounded" width="auto"></center><!--Imagen de Ariam de CRM-->
+                <li>Una vez hemos entrado vemos que podremos crear "meetings" con diferentes empleados o proveedores. Por otra parte, nos proporciona una bandeja de entrada para los correos.</li>
+                <center><img src="../img/cap_mod/mod_crm/paso2crm.png" alt=" Conversaciones Odoo " class="img-fluid rounded" width="auto"></center>
+                <li>Ahora nos dirigiremos a la parte superior izquierda y escogemos CRM, donde podremos ver un flujo con los diferentes datos financieros del negocio, desde los beneficios hasta los gastos importantes que cubren al negocio, como sueldos, mantenimiento online, etc.</li>
+                <center><img src="../img/cap_mod/mod_crm/paso3crm.png" alt=" CRM Odoo 3" class="img-fluid rounded" width="auto"></center>
+                <li>Por último, a parte de las aplicaciones, se nos abrirán unas notificaciones del mismo Odoo, donde podremos consultar alguna que otra duda si es necesario.</li>
+                <center><img src="../img/cap_mod/mod_crm/paso4crm.png" alt=" Bandeja de entrada Odoo" class="img-fluid rounded" width="auto"></center>
+                </ol>
+            </div>
+        </div>
+        <div class="card-body">
+            <h4 class="mt-3">Justificación de Módulos para una PYME</h4>
+            
+            <div class="module-justification">
+                <h5>Módulo 1: Punto de Venta (Finanzas)</h5>
+                <p>Esencial para cualquier PYME con ventas físicas o atención al público. Permite agilizar transacciones, gestionar pagos y controlar en tiempo real de inventario, mejorando la eficiencia operativa y la experiencia del cliente.</p>
+                
+                <h6>Características principales:</h6>
+                <ul>
+                    ✔ Interfaz intuitiva: Facilita ventas rápidas con filtro de búsqueda para productos o ventas personalizables.
+                    <br>
+                    ✔ Control de inventario: Actualiza automáticamente el stock al realizar ventas y permite gestionar múltiples almacenes sin redundancia de estas.
+                    <br>
+                    ✔ Reportes integrados: Genera análisis de ventas por período, empleado o producto, útil para decisiones.
+                </ul>
+                
+                <h6>Funcionamiento:</h6>
+                <ol>
+                    <li>El vendedor selecciona los productos en la interfaz.</li>
+                    <li>El sistema calcula el total, aplica impuestos y descuentos si los hay.</li>
+                    <li>Registra el método de pago y emite el comprobante.</li>
+                    <li>Actualiza automáticamente la contabilidad y el inventario.</li>
+                </ol>
+            </div>
+            
+            <div class="module-justification mt-4">
+                <h5>Módulo 2: CRM (Finanzas)</h5>
+                <p>El CRM es vital para PYMES que buscan organizar y mejorar su gestión de ventas. Centraliza la información de clientes (potenciales y actuales), automatiza seguimientos y aumenta las oportunidades de negocio mediante una gestión estratégica.</p>
+                
+                <h6>Características principales:</h6>
+                <ul>
+                    <li>✔ Pipeline de ventas (proceso): Visualiza etapas de oportunidades (nuevo, cotizado, ganado/perdido).</li>
+                    <li>✔ Automatización: Envía correos "recordatorios" o asigna tareas al equipo.</li>
+                    <li>✔ Segmentación: Clasifica clientes por ubicación, historial de compras o últimos intereses.</li>
+                    <li>✔ Integración: Se sincroniza con Ventas, Marketing y Sitio Web para obtener un flujo de trabajo unificado.</li>
+                </ul>
+                
+                <h6>Funcionamiento:</h6>
+                <ol>
+                    <li>Captación de clientes potenciales (formularios web, redes sociales, etc.).</li>
+                    <li>Clasificación y seguimiento de clientes mediante etapas personalizables.</li>
+                    <li>Generación de presupuestos automática.</li>
+                    <li>Análisis de resultados con dashboards o gráficos.</li>
+                </ol>
+            </div>
+            
+            <div class="conclusion mt-4">
+                <h5>Conclusión Grupal</h5>
+                <p>Ambos módulos son complementarios:</p>
+                <ul>
+                    <li>El punto de venta optimiza operaciones físicas y financieras tanto como para el cliente como la empresa.</li>
+                    <li>El CRM potencia las ventas y la fidelización.</li>
+                </ul>
+                
+                <p>Juntos cubren necesidades críticas de una PYME (eficiencia operativa + crecimiento comercial), integrando datos en un único sistema (Odoo ERP) para evitar duplicidades y errores.</p>
+            </div>
+        </div>
+    </div>  
 </body>
 </html>
