@@ -31,16 +31,18 @@
                         <a class="nav-link" href="modulos.html">Módulos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="backup.html">Backup</a>
+                        <a class="nav-link active" href="backup.html">Backup</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav> 
-    <h1 class="mb-4">Guia de backup para Odoo</h1>  
+
+    <br>
+    <h1 class="mb-4"><center>Guia de backup para Odoo</center></h1>  
     <div class="container">
         <h2 class="mt-4">Instalación paso a paso</h2>
-    
+        <br>
         <div class="card mb-4">
             <div class="card-header bg-primary text-white">
                 <h3>1. Acceder a Odoo</h3>
@@ -48,10 +50,26 @@
             <div class="card-body">
                 <ol>
                     <li>Entrar a un navegador e ingresar a: <a href="http://localhost:8069/web/database/manager">http://localhost:8069/web/database/manager</a> y le damos a backup</li>
+                    <br>
                     <center><img src="../img/cap_backup/backup_0_aitor.PNG" alt="BBDD de Odoo" class="img-fluid rounded" width="auto"></center>
+                    <br>
                     <li>Luego de esto, nos pedirá los datos de "Master Password", el nombre de la base de datos y en que formato quieres el .zip.</li>
+                    <br>
                     <center><img src="../img/cap_backup/backup_1_aitor.PNG" alt="Backup rápido de Odoo" class="img-fluid rounded" width="auto"></center>
-                    <li>Ahora nos dirigiremos a la máquina en la que queremos que este la base de datos y nos dirigimos al mismo link.</li>
+                    <br>
+                    <li>Vemos que tenemos listo el zip</li><br>
+                    <center><img src="../img/cap_backup/backup_2_aitor.PNG" alt="Backup rápido de Odoo" class="img-fluid rounded" width="auto"></center>
+                    <br>
+                    <li>Ahora nos dirigiremos a la máquina en la que queremos que este la base de datos y nos dirigimos al mismo link. Aqui le daremos a "Restore Database", donde restauraremos la base de datos a partir del .zip anterior.</li><br>
+                    <center><img src="../img/cap_backup/backup_3.png" alt="Incio de database de Odoo" class="img-fluid rounded" width="auto"></center>
+                    <br>
+                    <li>Por otra parte, debemos rellenar los datos para la base de datos, en este caso "Master Password", el archivo ZIP que queremos restaurar, el nombre de la base de datos y finalmente seleccionar que se ha removido ya que viene de otro lugar.</li>
+                    <br>
+                    <center><img src="../img/cap_backup/backup_4.png" alt="Backup datos de Odoo" class="img-fluid rounded" width="auto"></center>
+                    <br>
+                    <li>Una vez hecho todo lo anterior, ya estaría lista la restauración de la base de datos de "db_sanchezaitor".</li><br>
+                    <center><img src="../img/cap_backup/backup_5.png" alt="Backup datos de Odoo" class="img-fluid rounded" width="auto"></center>
+                    <br>
                 </ol>
 </body>
 </html>
